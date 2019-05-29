@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+    body{ background-color: black; font-family: 'VT323', monospace; }
+    .container{
+      color: tomato;
+      font-size: 125%;
+      
+    }
+    .content{
+      color: greenyellow;
+      font-size: 150%;
+      text-align: center;
+      padding: 15px;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      border-style: ridge;
+      border-color: yellowgreen;
+      border-radius: 20px;
+    }
+    h3{ display:inline;}
+    .riddle{
+      color: greenyellow;
+      font-size: 150%;
+      text-align: center;
+      padding: 15px;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 5%;
+      border-style:ridge;
+      border-color: yellowgreen;
+      border-radius: 20px;
+    }
+    .codeholder{
+      color: greenyellow;
+      font-size: 150%;
+      text-align: center;
+      border-style:ridge;
+      border-color: yellowgreen;
+      border-radius: 20px;
+      display: center;
+      margin-right: 25%;
+      margin-left: 25%;
+      margin-top: 5%;
+    }
+    .custom-select{
+      background-color: black;
+      color: white;
+    }
+    a:link{
+      color:yellowgreen
+    }
+    a:visited{
+      color: yellowgreen;
+    }

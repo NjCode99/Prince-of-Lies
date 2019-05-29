@@ -1,0 +1,36 @@
+body{
+	background-color: #000;
+	font-family: "Consolas"
+}
+
+.container{
+	margin: 25px 50 px;
+}
+.right{
+	float: right;
+}
+p{
+	font-size: 18px;
+	color: #00ff00;
+	text-shadow: 0 0 4px #00ff00;
+	/*border-right: .15em solid #00ff00; --looks odd*/ 
+}
+.z{
+	font-size: 18px;
+	color: red;
+	text-shadow: 0 0 4px #00ff00;
+	/*border-right: .15em solid #00ff00; --looks odd*/ 
+}
+a{
+	font-size: 18px;
+	color: #00ff00;
+	text-shadow: 0 0 4px #00ff00;
+	/*border-right: .15em solid #00ff00; --looks odd*/ 
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

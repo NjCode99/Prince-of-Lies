@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<script src="index.js"></script>
+	<link href="chatbox.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body onLoad="javascript:postLoadChat()">
+	<div id="chatBoxSystem">
+		<button id="minimizer" onClick="javascript:chatToggleShow()">&equiv;Show/hide Chat&equiv;</button>
+		<div id="hideablePortion_ChatBox">
+		<p id="m1" class="zlasMessageChatBox"> </p>
+		<p id="m2" class="saraMessageChatBox"> </p>
+		<p id="m3" class="zlasMessageChatBox"> </p>
+		<p id="m4" class="saraMessageChatBox"> </p>
+		<p id="m5" class="zlasMessageChatBox"> </p>
+		<p id="m6" class="saraMessageChatBox"> </p>
+		<p id="m7" class="closer"></p>
+	</div></div>
+<div id="top">
+	<p>Sytstem Lock<br>Auth code: ZLAS:subUser.2981</p>
+</div>
+	<div id="sideBar">
+	<div id="status" class="locked">
+	<h1 id="statusHead">Status: Lock Active</h1>
+		<p id="statusP">Input System Code under Auth to procede</p>
+	</div>
+	<a href=".." id="proButton" class="hide">Return To System Hub</a>
+		</div>
+	<div id="puzzleBox">
+	 <table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td><button id="0" onClick="javascript:c0()" class="pbr">.</button></td>
+      <td><button id="1" onClick="javascript:c1()" class="pbr">.</button></td>
+      <td><button id="2" onClick="javascript:c2()" class="pbr">.</button></td>
+    </tr>
+    <tr>
+      <td><button id="3" onClick="javascript:c3()" class="pbr">.</button></td>
+      <td><button id="4" onClick="javascript:c4()" class="pbr">.</button></td>
+      <td><button id="5" onClick="javascript:c5()" class="pbr">.</button></td>
+	  </tr>
+    <tr>
+      <td><button id="6" onClick="javascript:c6()" class="pbr">.</button></td>
+      <td><button id="7" onClick="javascript:c7()" class="pbr">.</button></td>
+      <td><button id="8" onClick="javascript:c8()" class="pbr">.</button></td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+<div id="buttonBox">
+	<button id="resetButton" onClick="javascript:reset()">Reset</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@charset "utf-8";
+#element { margin:0; padding:0; font-size:100%; line-height:1; }
+body {
+	background-image: url("bg1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin-bottom: 0px;
+	font-family: 'Raleway', sans-serif;
+}
+.head {
+	position: fixed;
+	top: 0;
+	background-color: #89B0AE;
+	width: 110%;
+	height: 70px;
+	margin-left: -10px;
+	margin-top: 0%; 
+	z-index: 1;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+.head h1 {
+	position: fixed;
+	font-family: "arial";
+	margin-left: 70px;
+	margin-top: 15px;
+}
+.head #logo {
+	position: fixed;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#headButtons {
+	padding-left: 20%;
+	padding-top: 25px;
+}
+a {
+	background-color: #555b6e;
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-decoration: none;
+	color: #89B0AE;
+	border-right: 5px black;
+	/*animation for hover*/
+		-webkit-transition: background-color 1s, color 1s; /* Safari compat */
+		transition: background-color 1s, color 1s;
+	
+}
+.head a:hover {
+	background-color: #717991;
+	color: #5EB1AD;
+}
+
+.labelLogo {
+	position: absolute;
+	margin:auto;
+	margin-top: -550px;
+	opacity: 0.05;
+	z-index: -1;
+}
+#label {
+	margin: auto;
+	margin-top: 260px;
+	width: 25%;
+	background-color: #BEE3DB;
+	text-align: center;
+	padding: 10px;
+}
+#label h1 {
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgba(0, 0, 0, 0.15);
+	padding: 10px;
+}
+h2 {
+	font-family: 'Raleway', sans-serif;
+	text-align: left;
+	background-color: #89B0AE;
+	margin-left: 1%;
+	margin-right: 30%;
+	padding-left: 2%;
+	border-left: solid #BEE3DB;
+}
+
+#cotentOne {
+	background-color: #555B6E;
+	margin: -8px; 
+	margin-top: 200px;
+	min-height: 300px;
+}
+.sectionsP {
+	width: 90%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+#sectionOne {
+	width: 50%;
+	height: 320px;
+	margin-top: 20px;
+	z-index: 2;
+}
+#cloud {
+	float: right;
+	margin-right: 12%;
+	width: 30%;
+	margin-top: -285px;
+	background-color: #89B0AE;
+	padding: 1%;
+	align-items: center;
+	justify-content: center;
+	border-left: solid #BEE3DB;
+}
+#sectionTwo {
+	height: 500px;
+	width: 100%;
+}
+#videobg {
+	width: 101.6%;
+	z-index: -100;
+	margin-top: 5px;
+	margin-left: -.9%;
+}
+#ceo {
+	position: absolute;
+	margin-top: -700px;
+}
+#ceotittle {
+	position: absolute;
+	margin-top: -750px;
+}
+#eyebox {
+	position: absolute;
+	margin-top: -660px;
+	margin-left: 80px;
+	width: 100px;
+	height: 15px;
+	background-color: black;
+}
+#liarText {
+	position: absolute;
+	margin-top: -660px;
+	margin-left: 80px;
+	width: 600px;
+	color: white;
+}
+#block1 {
+	position: absolute;
+	background-color: black;
+	width: 300px;
+	height: 100px;
+	margin-top: -740px;
+	margin-left: 800px;
+	justify-content: center;
+	font-size: 40px;
+}
+#foot {
+	height: 70px;
+	background-color:#89B0AE;
+	width: 101.6%;
+	margin-left: -.9%;
+	margin-top: -8px;
+	z-index: 100; 
+}
+#dont {
+	float: right;
+	margin-right: 5px;
+}
+#dont2 {
+	float: right;
+	margin-right: -145px;
+}
+/*Login*/
+#login {
+	float: right;
+	text-align: right;
+	color: white;
+	background-color:rgba(137,176,174,1.00);
+	width: 25%;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+	margin-right: 10%;
+	height: 250px;
+	padding-right: 5px;
+	margin-top: 20px;
+}
+#noUserText {
+	font-size: 11px;
+	margin-right: 1%;
+}
+/*Submit Button*/
+#loginButton {
+	position: absolute;
+	margin-left: 80%;
+	margin-top: -32px;
+	border: none;
+	padding: 15px 45px 15px 45px;
+	background-color: #555B6E;
+	color: #89B0AE;
+		/*animation for hover*/
+		-webkit-transition: background-color 1s, color 1s; /* Safari compat */
+		transition: background-color 1s, color 1s;
+}
+#loginButton:hover {
+	background-color: #717991;
+	color: #5EB1AD;
+}
+a {
+	background-color: #555b6e;
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-decoration: none;
+	color: #89B0AE;
+	border-right: 5px black;
+	/*animation for hover*/
+		-webkit-transition: background-color 1s, color 1s; /* Safari compat */
+		transition: background-color 1s, color 1s;
+	
+}
+.head a:hover {
+	background-color: #717991;
+	color: #5EB1AD;

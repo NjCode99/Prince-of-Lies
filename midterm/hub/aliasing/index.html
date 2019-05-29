@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>midterm puzzle game</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<link href="chatbox.css" rel="stylesheet" type="text/css">
+<script src="chatboxScript.js"></script>
+	<script>
+		// Scripted By Ray Gutierrez
+
+		var memory_array = ['AB','AB','CD','CD','EF','EF','GH','GH','IJ','IJ','KL','KL','MN','MN','OP','OP','QR','QR','ST','ST','VW','VW','XY','XY'];
+		var memory_values = [];
+		var memory_tile_ids = [];
+		var tiles_flipped = 0;
+		Array.prototype.memory_tile_shuffle = function(){
+			var i = this.length, j, temp;
+			while(--i > 0){
+				j = Math.floor(Math.random() * (i+1));
+				temp = this[j];
+				this[j] = this[i];
+				this[i] = temp;
+			}
+		}
+		function newBoard(){
+			tiles_flipped = 0;
+			var output = '';
+			memory_array.memory_tile_shuffle();
+			for(var i = 0; i < memory_array.length; i++){
+				output += '<div id="tile_'+i+'" onclick="memoryFlipTile(this,\''+memory_array[i]+'\')"></div>';
+			}
+			document.getElementById('memory_board').innerHTML = output;
+		}
+		function memoryFlipTile(tile,val){
+			if(tile.innerHTML == "" && memory_values.length < 2){
+				tile.style.background = '#FFF';
+				tile.innerHTML = val;
+				if(memory_values.length == 0){
+					memory_values.push(val);
+					memory_tile_ids.push(tile.id);
+				} else if(memory_values.length == 1){
+					memory_values.push(val);
+					memory_tile_ids.push(tile.id);
+					if(memory_values[0] == memory_values[1]){
+						tiles_flipped += 2;
+						// Clear both arrays
+						memory_values = [];
+						memory_tile_ids = [];
+						// Check to see if the whole board is cleared
+						if(tiles_flipped == memory_array.length){
+							
+							console.log("WIN");
+							document.getElementById("success").classList.remove("hidden");
+							document.getElementById("memory_board").classList.add("hidden");
+							document.getElementById("findit").classList.add("hidden");
+							sessionStorage.setItem("p1", true);
+						}
+					} else {
+						function flip2Back(){
+							// Flip the 2 tiles back over
+							var tile_1 = document.getElementById(memory_tile_ids[0]);
+							var tile_2 = document.getElementById(memory_tile_ids[1]);
+							tile_1.style.background = 'url(tile_bg.jpg)';
+							tile_1.innerHTML = "";
+							tile_2.style.background = 'url(tile_bg.jpg)';
+							tile_2.innerHTML = "";
+							// Clear both arrays
+							memory_values = [];
+							memory_tile_ids = [];
+						}
+						setTimeout(flip2Back, 700);
+					}
+				}
+			}
+		}
+		
+	</script>
+</head>
+
+<body onLoad="javascript:postLoadChat()">
+	<div id="chatBoxSystem">
+		<button id="minimizer" onClick="javascript:chatToggleShow()">&equiv;Show/hide Chat&equiv;</button>
+		<div id="hideablePortion_ChatBox">
+		<p id="m1" class="zlasMessageChatBox"> </p>
+		<p id="m2" class="saraMessageChatBox"> </p>
+		<p id="m3" class="zlasMessageChatBox"> </p>
+		<p id="m4" class="saraMessageChatBox"> </p>
+		<p id="m5" class="zlasMessageChatBox"> </p>
+		<p id="m6" class="saraMessageChatBox"> </p>
+		<p id="m7" class="closer"></p>
+	</div></div>
+	<div id="success" class="hidden">
+		<h5>Success</h5>
+		<h4>System Index is now unlocked.</h4>
+		<a href=".." id="returnLink">Return To Hub</a>
+	</div>
+	<p id="findit">Find all the matching letters to continue.</p>
+	<div id="memory_board"></div>
+<script>newBoard();</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+        body{
+            background-color: black;
+        }
+        h1{
+            color:greenyellow;
+            font-size: 100px;
+            text-align: center;
+            margin-right: 25%;
+            margin-left: 25%;
+            margin-top: 15%;
+            font-family: 'VT323', monospace;
+        }
+        h2{
+            color:greenyellow;
+            font-size: 50px;
+            text-align: center;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 5%;
+            font-family: 'VT323', monospace;
+        }
+#continueB {
+	margin-left: 25%;
+	width: 25%;
+}
+        a {
+            color: greenyellow;
+			background: #2B2B2B;
+			padding: 20px;
+			text-decoration: none;
+        }

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.zlasMessageChatBox {
+	background: grey;
+	margin-left: 5px;
+	margin-right: 30%;
+	border-radius: 20px;
+	border-bottom-left-radius: 0px;
+	padding-left: 10px;
+}
+.saraMessageChatBox {
+	background: #94D0E4;
+	margin-right: 5px;
+	margin-left: 30%;
+	border-radius: 20px;
+	border-bottom-right-radius: 0px;
+	padding-left: 10px;
+	
+}
+#chatBoxSystem {
+	width: 30%;
+	position: fixed;
+	margin-left: 65%;
+	margin-top: -10px;
+}
+#minimizer {
+	width: 100%;
+	border: none;
+	background: #BFBFBF;
+	height: 30px;
+	font-size: 14px;
+}
+#hideablePortion_ChatBox {
+	display: block;
+	margin-top: -16px;
+	padding-top: 5px;
+	height: 250px;
+	background: lightgrey;
+}
+.closer {
+	background: #BFBFBF;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	text-decoration: bold;
+}
